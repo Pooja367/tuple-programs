@@ -1,0 +1,152 @@
+1.program to create a tuple.
+#Create an empty tuple 
+x = ()
+print(x)
+#Create a tuple with tuple() function built-in Python
+tuplex = tuple('raj')
+print(tuplex)
+
+
+2.program to Create a tuple with different data types
+#Create a tuple with different data types
+tuplex = ("riya", False, 3.2, 1)
+print(tuplex)
+
+
+3.program to create a tuple of numbers and print one item.
+#Create a tuple with numbers
+tuplex = 5, 10, 15, 20, 25
+print(tuplex)
+#Create a tuple of one item
+tuplex = 5,
+print(tuplex)
+
+
+4.program to unpack a tuple into several variables.
+#create a tuple
+tuplex = 1, 2, 3 
+print(tuplex)
+n1, n2, n3 = tuplex
+#unpack a tuple in variables
+print(n1 + n2 + n3) 
+#the number of variables must be equal to the number of items of the tuple
+n1, n2, n3, n4= tuplex 
+
+
+5.program to add an item to a tuple.
+#create a tuple
+tuplex = (4, 6, 2, 8, 3, 1) 
+print(tuplex)
+#tuples are immutable, so you can not add new elements
+#using merge  with the + operator you can add an element and it will create a new tuple
+tuplex = tuplex + (9,)
+print(tuplex)
+#adding items in a specific index
+tuplex = tuplex[:5] + (15, 20, 25) + tuplex[:5]
+print(tuplex)
+#converting the tuple to list
+listx = list(tuplex) 
+#use different ways to add items in list
+listx.append(30)
+tuplex = tuple(listx)
+print(tuplex)
+
+
+
+6.program to convert a tuple to a string.
+tup = ('h', 'e', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd')
+str =  ''.join(tup)
+print(str)
+
+
+7.program to get the 4th element from the last element of a tuple.
+#Get an item of the tuple
+tuplex = ("h", "i", 1, "e", "v", "e", "r", "y", "o","n", "e")
+print(tuplex)
+#Get item (4th element)of the tuple by index
+item = tuplex[3]
+print(item)
+#Get item (4th element from last)by index negative
+item1 = tuplex[-4]
+print(item1)
+
+
+
+8. program to count the repeated items in a tuple.
+#create a tuple
+tuplex = 2, 4, 5, 6, 2, 3, 4, 4, 7 
+print(tuplex)
+#return the number of times it appears in the tuple.
+count = tuplex.count(4)
+print(count)
+
+
+9.program to check whether an element exists within a tuple.
+tuplex = ("h", "i", "r", "i", "y", "a")
+n=input("enter the tuple item : ")
+if n in tuplex:
+    print(True)
+else:
+    print(False)
+
+
+10. program to convert a list to a tuple.
+#Convert list to tuple
+listx = [5, 10, 7, 4, 15, 3]
+print(listx)
+#use the tuple() function built-in Python, passing as parameter the list
+tuplex = tuple(listx)
+print(tuplex)
+ 
+
+11. program to remove an item from a tuple.
+#create a tuple
+tuplex = "h", "i", "e", "v", "e", "r", "y", "o","n","e"
+print(tuplex)
+#tuples are immutable, so you can not remove elements
+#using nerge with the + operator you can remove an item and it will create a new tuple
+tuplex = tuplex[:2] + tuplex[3:]
+print(tuplex)
+#converting the tuple to list
+listx = list(tuplex) 
+#use different ways to remove an item of the list
+listx.remove("e") 
+#converting the tuple to list
+tuplex = tuple(listx)
+print(tuplex)
+
+
+
+12.program to find the length of a tuple
+#create a tuple
+tuplex = tuple("helloworld")
+print(tuplex)
+#use the len() function to known the length of tuple
+print(len(tuplex))
+
+
+13.program to convert a tuple to a dictionary.
+#create a tuple
+tuplex = ((2, "w"),(3, "r"))
+print(dict((y, x) for x, y in tuplex))
+
+
+14.program to reverse a tuple.
+#create a tuple
+x = ("helloworld")
+# Reversed the tuple
+y = reversed(x)
+print(tuple(y))
+#create another tuple
+x = (5, 10, 15, 20)
+# Reversed the tuple
+y = reversed(x)
+print(tuple(y))
+
+
+
+
+
+
+
+
